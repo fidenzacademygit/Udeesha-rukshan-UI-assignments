@@ -1,0 +1,80 @@
+.god-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 634px;
+}
+
+.main-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  height: 421px;
+  width: 449px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  background-color: cadetblue;
+  height: 313px;
+  width: 449px;
+}
+
+.f-row-col-1,
+.f-row-col-2,
+.f-row-col-3,
+.f-row-col-4,
+.f-row-col-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.f-row-col-1 {
+  background-color: azure;
+  width: 129px;
+}
+.f-row-col-2 {
+  background-color: rgb(25, 119, 119);
+  width: 128px;
+}
+.f-row-col-3 {
+  background-color: lightcoral;
+  width:95px;
+}
+.f-row-col-4 {
+  background-color: orange;
+  width: 32px;
+}
+.f-row-col-5 {
+  background-color: limegreen;
+  flex: 1;
+}
+
+/* SECOND ROW */
+.second-row {
+  display: flex;
+  background-color: yellow;
+  height: 210px;
+  width: 449px;
+}
+.s-row-col-1
+.s-row-col-2
+.s-row-col-3
+.s-col
+{
+    display: flex;
+    height:50px ;
+
+}
+/* THIRD ROW */
+.third-row {
+  display: flex;
+  background-color: rgb(67, 87, 200);
+  height: 210px;
+  width: 449px;
+}
