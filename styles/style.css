@@ -10,7 +10,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: red;
   height: 421px;
   width: 449px;
 }
@@ -35,46 +34,113 @@
 }
 
 .f-row-col-1 {
-  background-color: azure;
+  background-color: #548ed7;
   width: 129px;
 }
 .f-row-col-2 {
-  background-color: rgb(25, 119, 119);
+  background-color: #06b050;
   width: 128px;
 }
 .f-row-col-3 {
-  background-color: lightcoral;
-  width:95px;
+  background-color: #ffff01;
+  width: 95px;
 }
 .f-row-col-4 {
-  background-color: orange;
+  background-color: #ffffff;
   width: 32px;
 }
 .f-row-col-5 {
-  background-color: limegreen;
+  background-color: #c0504e;
   flex: 1;
 }
 
-/* SECOND ROW */
 .second-row {
   display: flex;
+  flex-direction: row;
   background-color: yellow;
   height: 210px;
   width: 449px;
 }
-.s-row-col-1
-.s-row-col-2
-.s-row-col-3
-.s-col
-{
-    display: flex;
-    height:50px ;
-
+.s-row-col-1 .s-row-col-2 .s-row-col-3 .s-col {
+  display: flex;
+  height: 50px;
 }
-/* THIRD ROW */
+
+.s-row-col-1 {
+  display: flex;
+  width: 193px;
+  background-color: #c0504e;
+}
+.s-row-col-2 {
+  display: flex;
+  width: 63px;
+  background-color: #ffff01;
+}
+.s-row-col-3 {
+  display: flex;
+  width: 64px;
+  background-color: #06b050;
+}
+.s-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.s-col-row-1 {
+  display: flex;
+  flex: 1;
+  background-color: #ffffff;
+}
+.s-col-row-2 {
+  display: flex;
+  background-color: #2484e9;
+  flex: 1;
+}
 .third-row {
   display: flex;
-  background-color: rgb(67, 87, 200);
+  flex-direction: row;
+
   height: 210px;
   width: 449px;
+}
+.t-row-col-1 .t-row-col-2 .t-row-col-3 .t-row-col-4 {
+  height: 210px;
+}
+
+.t-row-col-1 {
+  display: flex;
+  width: 65px;
+  background-color: #0d7ff1;
+}
+.t-row-col-2 {
+  display: flex;
+  width: 128px;
+  background-color: #06b050;
+}
+.t-row-col-3 {
+  display: flex;
+  width: 127.5px;
+  background-color: #ffffff;
+}
+.t-row-col-4 {
+  display: flex;
+  width: 65px;
+  background-color: #c0504e;
+}
+.t-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.t-col-row-1 {
+  display: flex;
+  background-color: #ffffff;
+  flex: 1;
+}
+.t-col-row-2 {
+  display: flex;
+  background-color: #06b050;
+  flex: 1;
+  width: 100%;
 }
