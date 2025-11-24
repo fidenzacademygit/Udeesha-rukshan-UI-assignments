@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+.god-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 634px;
+}
+
+.main-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 421px;
+  width: 449px;
+}
+
+.first-row {
+  display: flex;
+  height: 313px;
+  width: 449px;
+}
+
+.f-row-col-1,
+.f-row-col-2,
+.f-row-col-3,
+.f-row-col-4,
+.f-row-col-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 178.4px;
+  border: 1px solid #000;
+  border-left: none;
+}
+
+.f-row-col-1 {
+  width: 128px;
+  background: #548ed7;
+  border-left: 1px solid;
+}
+.f-row-col-2 {
+  width: 128px;
+  background: #06b050;
+}
+.f-row-col-3 {
+  width: 93.7px;
+  background: #ffff01;
+}
+.f-row-col-4 {
+  width: 29px;
+  background: #ffffff;
+}
+.f-row-col-5 {
+  flex: 1;
+  background: #c0504e;
+}
+
+.second-row {
+  display: flex;
+  height: 210px;
+  width: 449px;
+  border-top: none;
+}
+
+.s-row-col-1,
+.s-row-col-2,
+.s-row-col-3 {
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.s-row-col-1 {
+  width: 191px;
+  background: #c0504e;
+  border-left: 1px solid;
+}
+
+.s-row-col-2 {
+  width: 62px;
+  background: #ffff01;
+  border-left: none;
+}
+
+.s-row-col-3 {
+  width: 63px;
+  background: #06b050;
+  border-left: none;
+}
+
+.s-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: none;
+}
+
+.s-col-row-1,
+.s-col-row-2 {
+  flex: 1;
+  border: 1px solid #000;
+  border-left: none;
+  border-top: none;
+}
+
+.s-col-row-1 {
+  background: #ffffff;
+}
+.s-col-row-2 {
+  background: #2484e9;
+}
+
+.third-row {
+  display: flex;
+  height: 210px;
+  width: 449px;
+  border-top: none;
+}
+
+.t-row-col-1,
+.t-row-col-2,
+.t-row-col-3,
+.t-row-col-4 {
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.t-row-col-1 {
+  width: 62.6px;
+  background: #0d7ff1;
+  border-left: 1px solid;
+}
+
+.t-row-col-2 {
+  width: 127px;
+  background: #06b050;
+  border-left: none;
+}
+
+.t-row-col-3 {
+  width: 127.1px;
+  background: #ffffff;
+  border-left: none;
+}
+
+.t-row-col-4 {
+  width: 63.8px;
+  background: #c0504e;
+  border-left: none;
+}
+
+.t-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: none;
+}
+
+.t-col-row-1,
+.t-col-row-2 {
+  flex: 1;
+  border: 1px solid #000;
+  border-left: none;
+  border-top: none;
+}
+
+.t-col-row-1 {
+  background: #ffffff;
+}
+.t-col-row-2 {
+  background: #06b050;
+}
