@@ -41,11 +41,8 @@
       h5 {
         font-family: "Playfair Display", serif;
       }
-
-      /* Navbar Styling */
       .navbar {
         background: white !important;
-        padding: 15px 0;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       }
 
@@ -72,10 +69,9 @@
         width: auto;
       }
 
-      /* Hero Section */
       .hero-section {
         position: relative;
-        height: 95vh;
+        height: 105vh;
         overflow: hidden;
       }
 
@@ -91,7 +87,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 4.5rem;
+        font-size: 3rem;
         font-weight: 900;
         letter-spacing: 3px;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -101,26 +97,24 @@
       /* Search Box */
       .search-box-wrapper {
         position: relative;
-        margin-top: -80px;
+        margin-top: -21vh;
         z-index: 20;
         padding: 0 15px;
+        width: 72%;
       }
 
       .search-box {
         background: white;
-        padding: 30px;
+        padding: 55px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         border-radius: 8px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
+        justify-content: space-between;
       }
 
       .search-input-wrapper {
-        min-width: 180px;
-        flex: 1;
+        min-width: 100px;
       }
 
       .underline-input {
@@ -140,8 +134,8 @@
       }
 
       .btn-search-circle {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background: #d9534f;
         color: white;
@@ -158,31 +152,44 @@
         background: #c9302c;
       }
 
+      .red-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+      }
+
       /* Section Styling */
       .section-title {
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         color: #2c3e50;
       }
-
+      .section-title-location {
+        text-align: center;
+        padding-top: 10px;
+      }
       .section-dots {
         text-align: center;
         font-size: 24px;
         letter-spacing: 8px;
         color: #d9534f;
-        margin-bottom: 40px;
       }
 
       /* Vacation Ideas Cards */
       .vacation-card {
+        margin-top: 3vh;
+        margin-left: -3vh;
         position: relative;
         overflow: hidden;
         border-radius: 8px;
-        margin-bottom: 30px;
+        margin-bottom: 12px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
+        width: 360px;
+        height: 300px;
       }
 
       .vacation-card:hover {
@@ -191,7 +198,7 @@
 
       .vacation-card img {
         width: 100%;
-        height: 350px;
+        height: 100%;
         object-fit: cover;
       }
 
@@ -200,8 +207,8 @@
         bottom: 20px;
         text-align: center;
         left: 50%;
-        height: 10vh;
-        width: 35vh;
+        height: 15vh;
+        width: 45vh;
         transform: translateX(-50%);
         background: white;
         padding: 19px 30px;
@@ -213,12 +220,15 @@
 
       /* Location Cards */
       .location-card {
+        margin-top: 20px;
         background: white;
         overflow: hidden;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: row;
+        margin-left: -20px;
+        height: 300px;
         transition: transform 0.3s, box-shadow 0.3s;
       }
 
@@ -228,12 +238,12 @@
       }
 
       .location-card img {
-        width: 45%;
+        width: 50%;
         object-fit: cover;
       }
 
       .location-card-body {
-        padding: 25px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -274,7 +284,7 @@
       }
 
       .btn-book {
-        background: #d9534f;
+        background: #c9302c;
         color: white;
         border: none;
         padding: 6px 12px;
@@ -285,17 +295,18 @@
       }
 
       .btn-book:hover {
-        background: #c9302c;
+        background: #d9534f;
         color: white;
       }
 
       /* Why Different Section */
       .feature-card {
         background: transparent;
-        padding: 40px 30px;
+        padding: 20px;
+        margin-left: -2vh;
         text-align: center;
         transition: box-shadow 0.3s, transform 0.3s;
-        height: 100%;
+        height: 30vh;
       }
 
       .feature-card:hover {
@@ -325,7 +336,7 @@
       /* Contact Section */
       .contact-section {
         position: relative;
-        margin-top: 60px;
+        margin-top: 5vh;
       }
 
       .contact-bg {
@@ -336,20 +347,20 @@
 
       .contact-form {
         position: absolute;
-        margin-top:4px;
+        margin-top: 4px;
         top: 66%;
-        right: 50px;
+        right: 200px;
         transform: translateY(-50%);
         background: white;
         padding: 40px;
-        border-radius: 10px;
+
         box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-        width: 450px;
+        width: 28%;
       }
 
       .contact-form h3 {
         font-size: 2rem;
-        margin-bottom: 30px;
+        padding-bottom: 27px;
         text-align: center;
         color: #2c3e50;
       }
@@ -412,7 +423,10 @@
         background-color: #f8f9fa;
         padding: 60px 0;
       }
-
+      .custom-send-btn {
+        width: 100px;
+        margin-left: 10px;
+      }
       /* Responsive */
       @media (max-width: 992px) {
         .hero-title {
@@ -449,6 +463,254 @@
           width: 90%;
         }
       }
+      .navbar-nav .nav-item .nav-link {
+        padding: 0 25px !important;
+        font-weight: 900;
+      }
+      .feature-div-1 {
+        margin-top: 2px;
+        margin-left: 108px !important;
+      }
+      .feature-div-2 {
+        margin-top: 2px;
+        margin-left: 118px !important;
+      }
+      .feature-div-3 {
+        margin-top: 2px;
+        margin-left: 128px !important;
+      }
+      @media (max-width: 1200px) {
+        .search-box-wrapper {
+          width: 85%;
+        }
+        .search-box {
+          padding: 40px;
+        }
+        .contact-form {
+          right: 100px;
+          width: 32%;
+        }
+        .vacation-card {
+          width: 100%;
+          margin-left: 0;
+        }
+        .location-card {
+          margin-left: 0;
+        }
+      }
+      @media (max-width: 992px) {
+        .hero-title {
+          font-size: 2.5rem;
+          letter-spacing: 2px;
+        }
+        .hero-section {
+          height: 80vh;
+        }
+        .search-box-wrapper {
+          width: 90%;
+          margin-top: -15vh;
+        }
+        .search-box {
+          padding: 30px;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        .search-input-wrapper {
+          flex: 1 1 calc(50% - 10px);
+          min-width: 150px;
+        }
+        .red-btn {
+          margin-left: 0;
+          flex: 1 1 100%;
+          justify-content: center;
+        }
+        .section-title {
+          font-size: 2rem;
+        }
+        .vacation-card {
+          width: 100%;
+          height: 280px;
+          margin-left: 0;
+        }
+        .vacation-label {
+          height: auto;
+          width: 80%;
+          padding: 15px 20px;
+        }
+        .location-card {
+          flex-direction: column;
+          height: auto;
+          margin-left: 0;
+        }
+        .location-card img {
+          width: 100%;
+          height: 250px;
+        }
+        .contact-section {
+          margin-top: 3vh;
+        }
+        .contact-bg {
+          height: 400px;
+        }
+        .contact-form {
+          position: static;
+          transform: none;
+          margin: 30px auto;
+          right: 0;
+          width: 80%;
+        }
+        .feature-card {
+          margin-left: 0;
+          height: auto;
+          padding: 30px 15px;
+        }
+        .feature-div-1,
+        .feature-div-2,
+        .feature-div-3 {
+          margin-left: auto !important;
+        }
+        .navbar-nav .nav-item .nav-link {
+          padding: 10px 15px !important;
+        }
+      }
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2rem;
+          letter-spacing: 1px;
+          white-space: normal;
+          text-align: center;
+          padding: 0 20px;
+        }
+        .hero-section {
+          height: 60vh;
+        }
+        .search-box-wrapper {
+          width: 95%;
+          margin-top: -10vh;
+        }
+        .search-box {
+          padding: 25px;
+          flex-direction: column;
+          gap: 15px;
+        }
+        .search-input-wrapper {
+          width: 100%;
+          flex: 1 1 100%;
+        }
+        .section-title {
+          font-size: 1.75rem;
+        }
+        .vacation-card {
+          height: 250px;
+          margin-bottom: 20px;
+        }
+        .vacation-label {
+          bottom: 15px;
+          width: 90%;
+          padding: 12px 15px;
+          font-size: 14px;
+        }
+        .location-card-body {
+          padding: 20px;
+        }
+        .location-card-title {
+          font-size: 1.3rem;
+        }
+        .amenities-list {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .contact-form {
+          width: 90%;
+          padding: 30px 20px;
+        }
+        .contact-form h3 {
+          font-size: 1.5rem;
+          padding-bottom: 20px;
+        }
+        .feature-card {
+          margin-bottom: 30px;
+        }
+        .feature-title {
+          font-size: 1.2rem;
+        }
+        footer .col-md-3,
+        footer .col-md-2 {
+          margin-bottom: 30px;
+        }
+        footer .text-right {
+          text-align: left !important;
+        }
+        .bg-content {
+          padding: 40px 0;
+        }
+      }
+      @media (max-width: 576px) {
+        .hero-title {
+          font-size: 1.5rem;
+        }
+        .hero-section {
+          height: 50vh;
+        }
+        .search-box-wrapper {
+          margin-top: -8vh;
+        }
+        .search-box {
+          padding: 20px;
+        }
+        .section-title {
+          font-size: 1.5rem;
+        }
+        .vacation-card {
+          height: 220px;
+        }
+        .vacation-label {
+          font-size: 13px;
+          padding: 10px;
+          white-space: normal;
+        }
+        .location-card img {
+          height: 200px;
+        }
+        .contact-bg {
+          height: 300px;
+        }
+        .contact-form {
+          padding: 25px 15px;
+        }
+        .btn-send,
+        .custom-send-btn {
+          width: 100%;
+        }
+        .feature-icon {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 20px;
+        }
+        .navbar-brand img {
+          height: 40px;
+        }
+        .small-img {
+          height: 40px;
+        }
+      }
+      @media (max-width: 400px) {
+        .hero-title {
+          font-size: 1.2rem;
+        }
+        .section-title {
+          font-size: 1.3rem;
+        }
+        .vacation-card {
+          height: 200px;
+        }
+        .search-box {
+          padding: 15px;
+        }
+        .underline-input {
+          font-size: 13px;
+        }
+      }
     </style>
   </head>
 
@@ -466,15 +728,21 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Experiences</a>
-            </li>
+          <ul
+            class="navbar-nav w-100 d-flex justify-content-between align-items-center"
+          >
+            <!-- LEFT MENU -->
+            <div class="d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link" href="#">Experiences</a>
+              </li>
+            </div>
 
-            <li class="nav-item">
+            <!-- CENTER LOGO -->
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">
                 <img
                   src="images/Private_Holidays.png"
@@ -484,12 +752,15 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Questions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+            <!-- RIGHT MENU -->
+            <div class="d-flex align-items-center">
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -497,7 +768,7 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-      <img src="images/Layer 3.png" alt="Hero" />
+      <img src="images/Layer 3.png" alt="Hero" class="bg-content-img" />
       <h1 class="hero-title">ENJOY FREEDOM LAND</h1>
     </div>
 
@@ -539,15 +810,16 @@
               <option>5</option>
             </select>
           </div>
-
-          <button class="btn-search-circle">›</button>
+          <div class="red-btn">
+            <button class="btn-search-circle">›</button>
+          </div>
         </div>
       </div>
 
       <!-- Vacation Ideas -->
       <section class="container mt-5 pt-5">
         <h2 class="section-title">See latest vacation ideas</h2>
-        <div class="section-dots"><img src="images/title separator.png"></div>
+        <div class="section-dots"><img src="images/title separator.png" /></div>
 
         <div class="row">
           <div class="col-md-4">
@@ -581,8 +853,10 @@
 
       <!-- Recent Locations -->
       <section class="container mt-5 pt-4">
-        <h2 class="section-title">Recent holiday locations</h2>
-        <div class="section-dots"><img src="images/title separator.png"></div>
+        <h2 class="section-title section-title-location">
+          Recent holiday locations
+        </h2>
+        <div class="section-dots"><img src="images/title separator.png" /></div>
 
         <div class="row">
           <div class="col-lg-6">
@@ -617,7 +891,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="location-card">
+            <div class="location-card ml-0">
               <img
                 src="images/Rectangle 3 copy 3 (1).png"
                 alt="Montage Kapalua"
@@ -685,7 +959,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="location-card">
+            <div class="location-card ml-0">
               <img src="images/Rectangle 3 copy 3 (2).png" alt="Casa Jaguar" />
               <div class="location-card-body">
                 <div>
@@ -719,13 +993,15 @@
 
       <!-- Why Different -->
       <section class="container mt-5 pt-4 pb-5">
-        <h2 class="section-title">Why we are different</h2>
-        <div class="section-dots"><img src="images/title separator.png"></div>
-        
+        <h2 class="section-title mt-2">Why we are different</h2>
+        <div class="section-dots mt-2">
+          <img src="images/title separator.png" />
+        </div>
+
         <div class="row">
           <div class="col-md-4">
             <div class="feature-card">
-              <div class="feature-icon mx-auto">
+              <div class="feature-icon mx-auto feature-div-1">
                 <img src="images/1st_circle.png" />
               </div>
               <h4 class="feature-title">Tailor-Made Packages</h4>
@@ -739,7 +1015,7 @@
 
           <div class="col-md-4">
             <div class="feature-card">
-              <div class="feature-icon mx-auto">
+              <div class="feature-icon mx-auto px-n2 feature-div-2">
                 <img src="images/date_circle.png" />
               </div>
               <h4 class="feature-title">Best Experience</h4>
@@ -753,7 +1029,7 @@
 
           <div class="col-md-4">
             <div class="feature-card">
-              <div class="feature-icon mx-auto">
+              <div class="feature-icon mx-auto feature-div-3">
                 <img src="images/diamond_circle.png" />
               </div>
               <h4 class="feature-title">Exquisite Service</h4>
@@ -787,7 +1063,9 @@
           <input type="text" placeholder="Message" class="underline-input" />
         </div>
 
-        <button class="btn btn-danger rounded-pill">SEND</button>
+        <button class="btn btn-danger rounded-pill custom-send-btn">
+          SEND
+        </button>
       </div>
     </section>
 
