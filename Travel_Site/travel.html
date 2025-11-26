@@ -11,7 +11,13 @@
     />
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <style>
       .desc-box {
         position: absolute;
@@ -20,7 +26,6 @@
         transform: translateX(-50%);
         background: white;
         padding: 8px 15px;
-
         font-weight: bold;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 10;
@@ -45,6 +50,26 @@
       .small-gap {
         column-gap: 20px;
       }
+      .search-box-wrapper {
+        position: relative;
+        margin-top: -90px;
+        z-index: 20;
+      }
+
+      .search-box {
+        background: white;
+        padding: 20px;
+
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+      .fw-900 {
+        font-weight: 700 !important;
+        letter-spacing: 0.5px;
+      }
+      .card {
+        background: transparent !important;
+        border: none !important;
+      }
     </style>
   </head>
 
@@ -61,10 +86,10 @@
 
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav d-flex w-100 justify-content-between">
-          <li class="nav-item font-weight-bold">
+          <li class="nav-item fw-bold">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item font-weight-bold">
+          <li class="nav-item fw-bold">
             <a class="nav-link" href="#">Experience</a>
           </li>
 
@@ -90,9 +115,9 @@
     <div>
       <img src="./images/Layer 3.png" alt="Hero" class="img-fluid w-100" />
       <h1
-        class="position-absolute text-white"
+        class="position-absolute text-white fw-900"
         style="
-          top: 50%;
+          top: 55%;
           left: 50%;
           transform: translate(-50%, -50%);
           font-size: 4rem;
@@ -103,49 +128,72 @@
     </div>
 
     <div
-      class="container mt-5 align-items-center justify-content-center bg-dark"
+      class="container-fluid mt-5 align-items-center justify-content-center"
+      style="background-color: #ecf0f1"
     >
-<section class="mb-5 bg-light p-4 rounded">
-  <div class="d-flex align-items-center justify-content-center flex-wrap">
+      <script>
+        flatpickr(".date-field", {
+          dateFormat: "d M Y",
+        });
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <div class="mr-3 mb-2" style="width: 200px;">
-      <input type="text" class="form-control" placeholder="Your Name" />
-    </div>
+      <div class="container search-box-wrapper mb-5">
+        <section class="search-box">
+          <div
+            class="d-flex align-items-center justify-content-center flex-wrap"
+          >
+            <div class="mr-3 mb-2" style="width: 200px">
+              <input
+                type="text"
+                class="form-control underline-input date-field"
+                placeholder="24 Sept 2016"
+              />
+            </div>
 
-    <div class="mr-3 mb-2" style="width: 200px;">
-      <input type="date" class="form-control" />
-    </div>
+            <div class="mr-3 mb-2" style="width: 200px">
+              <input
+                type="text"
+                class="form-control underline-input date-field"
+                placeholder="10 Oct 2016"
+              />
+            </div>
 
-    <div class="mr-3 mb-2" style="width: 200px;">
-      <input type="date" class="form-control" />
-    </div>
+            <div class="mr-3 mb-2" style="width: 200px">
+              <input
+                type="text"
+                class="form-control underline-input date-field"
+                placeholder="10 Oct 2016"
+              />
+            </div>
 
-    <div class="dropdown d-flex align-items-center mb-2">
-      <button
-        class="btn btn-secondary dropdown-toggle mr-2"
-        type="button"
-        data-toggle="dropdown"
-      >
-        Number of Rooms
-      </button>
+            <div class="dropdown d-flex align-items-center mb-2">
+              <button
+                class="btn btn-secondary dropdown-toggle mr-2"
+                type="button"
+                data-toggle="dropdown"
+              >
+                Number of Rooms
+              </button>
 
-      <div class="dropdown-menu">
-        <a class="dropdown-item">1</a>
-        <a class="dropdown-item">2</a>
-        <a class="dropdown-item">3</a>
-        <a class="dropdown-item">4</a>
-        <a class="dropdown-item">5</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item">1</a>
+                <a class="dropdown-item">2</a>
+                <a class="dropdown-item">3</a>
+                <a class="dropdown-item">4</a>
+                <a class="dropdown-item">5</a>
+              </div>
+
+              <div
+                class="btn btn-danger rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div class="btn btn-danger rounded-circle d-flex justify-content-center align-items-center"
-           style="width: 40px; height: 40px;">
-        >
-      </div>
-    </div>
-
-  </div>
-</section>
-
 
       <section class="mb-5">
         <h3 class="text-center">See Latest Vacation Ideas</h3>
@@ -191,16 +239,25 @@
 
                 <ul class="list-inline mb-3">
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bed.png" alt=""></span>3
+                    <span class="text-primary"
+                      ><img src="images/bed.png" alt="" /></span
+                    >3
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bath.png" alt=""></span> 4
+                    <span class="text-primary"
+                      ><img src="images/bath.png" alt=""
+                    /></span>
+                    4
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/beachfront.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/beachfront.png" alt=""
+                    /></span>
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/pool.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/pool.png" alt=""
+                    /></span>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
@@ -225,16 +282,25 @@
 
                 <ul class="list-inline mb-3">
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bed.png" alt=""></span>1
+                    <span class="text-primary"
+                      ><img src="images/bed.png" alt="" /></span
+                    >1
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bath.png" alt=""></span> 1
+                    <span class="text-primary"
+                      ><img src="images/bath.png" alt=""
+                    /></span>
+                    1
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/beachfront.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/beachfront.png" alt=""
+                    /></span>
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/pool.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/pool.png" alt=""
+                    /></span>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
@@ -260,16 +326,25 @@
 
                 <ul class="list-inline mb-3">
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bed.png" alt=""></span>4
+                    <span class="text-primary"
+                      ><img src="images/bed.png" alt="" /></span
+                    >4
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bath.png" alt=""></span> 4
+                    <span class="text-primary"
+                      ><img src="images/bath.png" alt=""
+                    /></span>
+                    4
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/beachfront.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/beachfront.png" alt=""
+                    /></span>
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/pool.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/pool.png" alt=""
+                    /></span>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
@@ -294,16 +369,25 @@
 
                 <ul class="list-inline mb-3">
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bed.png" alt=""></span>4
+                    <span class="text-primary"
+                      ><img src="images/bed.png" alt="" /></span
+                    >4
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/bath.png" alt=""></span> 4
+                    <span class="text-primary"
+                      ><img src="images/bath.png" alt=""
+                    /></span>
+                    4
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/beachfront.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/beachfront.png" alt=""
+                    /></span>
                   </li>
                   <li class="list-inline-item">
-                    <span class="text-primary"><img src="images/pool.png" alt=""></span> 
+                    <span class="text-primary"
+                      ><img src="images/pool.png" alt=""
+                    /></span>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-danger rounded-pill">Book Now</a>
@@ -313,15 +397,15 @@
         </div>
       </section>
 
-      <section class="mb-5"  style="background-color: #ECF0F1;">
+      <section class="m-5 mb-5">
         <h3 class="text-center">Why We Are Different</h3>
         <div class="d-flex justify-content-center align-items-center">
           <p class="row text-center">....</p>
         </div>
         <div class="row text-center mt-3">
           <div class="col-md-4">
-            <div class="border p-4 card" >
-              <div class="card-img">
+            <div class="border p-4 card">
+              <div class="card-img mb-3">
                 <img src="images/Ellipse 1.png" alt="" />
               </div>
               <div class="card-title font-weight-bold">
@@ -336,7 +420,7 @@
           </div>
           <div class="col-md-4">
             <div class="border p-4 card">
-              <div class="card-img">
+              <div class="card-img mb-3">
                 <img src="images/Ellipse 2.png" alt="" />
               </div>
               <div class="card-title font-weight-bold">Best Experience</div>
@@ -349,7 +433,7 @@
           </div>
           <div class="col-md-4">
             <div class="border p-4 card">
-              <div class="card-img">
+              <div class="card-img mb-3">
                 <img src="images/Ellipse 3.png" alt="" />
               </div>
               <div class="card-title font-weight-bold">Exqusite Service</div>
