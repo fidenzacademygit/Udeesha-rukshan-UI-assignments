@@ -45,10 +45,10 @@
             <!-- LEFT MENU -->
             <div class="d-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link home" href="#">Home</a>
               </li>
               <li class="nav-item ml-3">
-                <a class="nav-link" href="#">Experiences</a>
+                <a class="nav-link experience" href="#">Experiences</a>
               </li>
             </div>
 
@@ -64,14 +64,16 @@
             </li>
 
             <!-- RIGHT MENU -->
-            <div class="d-flex align-items-center">
-              <li class="nav-item mr-3">
-                <a class="nav-link" href="#">Questions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </div>
+            <!-- RIGHT MENU -->
+<div class="d-flex align-items-center nav-right">
+  <li class="nav-item">
+    <a class="nav-link questions" href="#">Questions</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link contact" href="#">Contact</a>
+  </li>
+</div>
+
           </ul>
         </div>
       </div>
@@ -79,9 +81,15 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-      <img src="images/Layer 3.png" alt="Hero" class="bg-content-img" />
-      <h1 class="hero-title">ENJOY FREEDOM LAND</h1>
-    </div>
+  <img src="images/Layer 3.png" alt="Hero" class="bg-content-img" />
+
+  <h1 class="hero-title">
+    <span class="hero-part part1">ENJOY</span>
+    <span class="hero-part part2">FREEDOM</span>
+    <span class="hero-part part3">LAND</span>
+  </h1>
+</div>
+
 
     <!-- Main Content -->
     <div class="bg-content">
@@ -137,9 +145,7 @@
             <div class="vacation-card">
               <img src="images/Rectangle 23 (1).png" alt="Beach" />
               <div class="vacation-label">
-                <p class="border text-center m-0 py-2 px-3">
-                  Beachfront Escapes
-                </p>
+                <p class="border text-center">Beachfront Escapes</p>
               </div>
             </div>
           </div>
@@ -147,7 +153,7 @@
             <div class="vacation-card mx-auto">
               <img src="images/Rectangle 23 copy (1).png" alt="Group" />
               <div class="vacation-label">
-                <p class="border text-center m-0 py-2 px-3">Group Holidays</p>
+                <p class="border text-center">Group Holidays</p>
               </div>
             </div>
           </div>
@@ -155,7 +161,7 @@
             <div class="vacation-card mx-auto">
               <img src="images/Rectangle 23 copy 2.png" alt="City" />
               <div class="vacation-label">
-                <p class="border text-center m-0 py-2 px-3">City Breaks</p>
+                <p class="border text-center">City Breaks</p>
               </div>
             </div>
           </div>
@@ -172,7 +178,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="location-card">
-              <img src="images/Rectangle 3 copy 2 (3).png" alt="Thalie 5" />
+              <img src="images/Rectangle 3 copy 2 (3).png" class="location-thali-img" alt="Thalie 5" />
               <div class="location-card-body">
                 <div>
                   <h3 class="location-card-title">Thalie 5</h3>
@@ -375,7 +381,7 @@
       <img src="images/Shape 64.png" class="contact-bg" alt="Contact" />
 
       <div class="contact-form">
-        <h3>Send us a message</h3>
+        <h3 class="send-us-message">Send us a message</h3>
 
         <div class="form-group-custom">
           <input type="text" placeholder="Your Name" class="underline-input" />
@@ -399,7 +405,7 @@
     <footer class="pr-4">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 ">
+          <div class="col-md-2">
             <h5>Information</h5>
             <a href="#">About us</a>
             <a href="#">Online enquiry</a>
