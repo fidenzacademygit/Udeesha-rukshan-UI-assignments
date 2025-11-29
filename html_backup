@@ -132,7 +132,7 @@
 
         <div class="row">
           <div class="col-md-4">
-            <div class="vacation-card  vacation-1">
+            <div class="vacation-card">
               <img src="images/Rectangle 23 (1).png" alt="Beach" />
               <div class="vacation-label">
                 <p class="border text-center">Beachfront Escapes</p>
@@ -140,7 +140,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="vacation-card mx-auto vacation-2">
+            <div class="vacation-card mx-auto">
               <img src="images/Rectangle 23 copy (1).png" alt="Group" />
               <div class="vacation-label">
                 <p class="border text-center">Group Holidays</p>
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="vacation-card mx-auto vacation-3">
+            <div class="vacation-card mx-auto">
               <img src="images/Rectangle 23 copy 2.png" alt="City" />
               <div class="vacation-label">
                 <p class="border text-center">City Breaks</p>
@@ -179,17 +179,20 @@
                   </p>
                   <div class="amenities-list">
                     <span class="amenity-item"
-                      ><img src="images/bed.png" class="amenity-icon" /> 3</span
+                      ><img src="images/bed.png" class="amenity-icon" /> 4</span
                     >
                     <span class="amenity-item"
                       ><img src="images/bath.png" class="amenity-icon" />
-                      5</span
+                      4</span
                     >
                     <span class="amenity-item"
                       ><img
                         src="images/beachfront.png"
                         class="amenity-icon"
                       />2</span
+                    >
+                    <span class="amenity-item"
+                      ><img src="images/pool.png" class="amenity-icon" />2</span
                     >
                   </div>
                 </div>
@@ -214,20 +217,20 @@
                   </p>
                   <div class="amenities-list">
                     <span class="amenity-item"
-                      ><img src="images/bed.png" class="amenity-icon" /> 1</span
+                      ><img src="images/bed.png" class="amenity-icon" /> 4</span
                     >
                     <span class="amenity-item"
                       ><img src="images/bath.png" class="amenity-icon" />
-                      1</span
+                      4</span
                     >
                     <span class="amenity-item"
                       ><img
                         src="images/beachfront.png"
                         class="amenity-icon"
-                      /></span
+                      />2</span
                     >
                     <span class="amenity-item"
-                      ><img src="images/pool.png" class="amenity-icon" /></span
+                      ><img src="images/pool.png" class="amenity-icon" />2</span
                     >
                   </div>
                 </div>
@@ -261,10 +264,10 @@
                       ><img
                         src="images/beachfront.png"
                         class="amenity-icon"
-                      /></span
+                      />2</span
                     >
                     <span class="amenity-item"
-                      ><img src="images/pool.png" class="amenity-icon" /></span
+                      ><img src="images/pool.png" class="amenity-icon" />2</span
                     >
                   </div>
                 </div>
@@ -284,7 +287,7 @@
                     been named, Casa Jaguar is an immaculate tropical luxury
                     villa located.
                   </p>
-                  <div class="amenities-list casa-jaguar">
+                  <div class="amenities-list">
                     <span class="amenity-item"
                       ><img src="images/bed.png" class="amenity-icon" /> 4</span
                     >
@@ -296,9 +299,11 @@
                       ><img
                         src="images/beachfront.png"
                         class="amenity-icon"
-                      /></span
+                      />2</span
                     >
-
+                    <span class="amenity-item"
+                      ><img src="images/pool.png" class="amenity-icon" />2</span
+                    >
                   </div>
                 </div>
                 <button class="btn-book">BOOK NOW</button>
@@ -321,8 +326,8 @@
               <div class="feature-icon mx-auto feature-div-1">
                 <img src="images/1st_circle.png" />
               </div>
-              <h4 class="feature-title tt-1">Tailor-Made Packages</h4>
-              <p class="feature-text ttt-3">
+              <h4 class="feature-title">Tailor-Made Packages</h4>
+              <p class="feature-text">
                 When it comes to delivering the best planned holiday package to
                 you, we strive to exceed your expectations. For us, it has to be
                 spot-on. We do what we do in the ideal way possible.
@@ -335,8 +340,8 @@
               <div class="feature-icon mx-auto px-n2 feature-div-2">
                 <img src="images/date_circle.png" />
               </div>
-              <h4 class="feature-title tt-2">Best Experience</h4>
-              <p class="feature-text ttt-2">
+              <h4 class="feature-title">Best Experience</h4>
+              <p class="feature-text">
                 At Private Holidays, we choose to put forth an essence of our
                 own expertise and firsthand experience into our service and
                 method of planning.
@@ -349,8 +354,8 @@
               <div class="feature-icon mx-auto feature-div-3">
                 <img src="images/diamond_circle.png" />
               </div>
-              <h4 class="feature-title tt-3">Exquisite Service</h4>
-              <p class="feature-text ttt-3">
+              <h4 class="feature-title">Exquisite Service</h4>
+              <p class="feature-text">
                 From the moment you make the first call to enquiry, our services
                 are geared up. From the time of booking to your stay and well
                 after the trip, we will guide you and be at your back.
