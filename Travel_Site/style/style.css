@@ -38,7 +38,7 @@ h5 {
 }
 
 .small-img {
-  height: 55px;
+  height: 54px;
   width: auto;
 }
 .hero-title {
@@ -123,7 +123,7 @@ h5 {
 }
 
 .search-input-wrapper {
-  min-width: 100px;
+  min-width: 190px;
 }
 
 .underline-input {
@@ -131,6 +131,7 @@ h5 {
   border: none;
   border-bottom: 2px solid #e0e0e0;
   padding: 11px;
+  padding-bottom: -7px;
   margin-left: -16px;
   outline: none;
   background: transparent;
@@ -138,7 +139,19 @@ h5 {
   color: #666;
   transition: border-color 0.3s;
 }
-
+.underline-input-contact {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px;
+  padding-bottom: -10px;
+  margin-left: -16px;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #666;
+  transition: border-color 0.3s;
+}
 .navbar-nav > li:nth-last-child(2) {
   margin-right: 80px !important;
 }
@@ -191,7 +204,7 @@ h5 {
 .section-title-location {
   text-align: center;
   word-spacing: 6px;
-  padding-top: 10px;
+  padding-top: 8.5px;
 }
 .section-dots {
   text-align: center;
@@ -201,14 +214,14 @@ h5 {
 }
 
 .vacation-card {
-  margin-top: 19px;
+  margin-top: 18.5px;
   position: relative;
   overflow: hidden;
   margin-bottom: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   width: 360px;
-  height: 300px;
+  height: 302px;
 }
 
 .vacation-card img {
@@ -219,10 +232,10 @@ h5 {
 
 .vacation-label {
   position: absolute;
-  bottom: 29px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 83.2%;
+  width: 83.3%;
   height: 100px;
   background: white;
   padding: 4px;
@@ -236,14 +249,13 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .vacation-1 {
-  margin-left: -16px !important;
+  margin-left: -15px !important;
   padding-top: 2px !important;
   word-spacing: 1px;
 }
 .vacation-1 p {
   /* word-spacing: 5px; */
-  letter-spacing:0.6px ;
-
+  letter-spacing: 0.6px;
 }
 .vacation-2 {
   margin-left: -5px !important;
@@ -251,9 +263,7 @@ h5 {
   padding-top: 2px !important;
 }
 .vacation-2 p {
-
-  letter-spacing:0.6px ;
-
+  letter-spacing: 0.6px;
 }
 .vacation-3 {
   margin-left: 5px !important;
@@ -315,28 +325,33 @@ h5 {
   border-width: 3px;
 }
 .location-card {
-  margin-top: 20px;
+  margin-top: 19px;
   background: white;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   display: flex;
   flex-direction: row;
   margin-left: -20px;
-  height: 299px;
+  height: 300.5px;
   width: 555px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .location-thali-img {
   position: relative;
-  left: 3px;
+  width: 279.5px;
+  height: 100%;
+  left: 3.8px;
 }
 
 .location-casa-del {
   padding-left: 5px;
 }
+.casa-jaguar {
+  margin-top: -22px;
+}
+
 .location-card-body {
   padding: 25px;
   display: flex;
@@ -357,12 +372,12 @@ h5 {
 }
 /* First title */
 .location-card:nth-of-type(1) .location-card-title {
-letter-spacing: 1px;
-margin-left: -5px;
-word-spacing: -4px;
+  letter-spacing: 1px;
+  margin-left: -5px;
+  word-spacing: -4px;
 }
-.title-thalie{
-  margin-left:-2px !important;
+.title-thalie {
+  margin-left: -2px !important;
 }
 .footer-shift-left {
   margin-left: -38px !important;
@@ -375,6 +390,7 @@ word-spacing: -4px;
 }
 .footer-shift-left-3 {
   margin-top: -5px;
+  line-height: 20.8px;
 }
 .location-card-text {
   font-size: 15px;
@@ -419,8 +435,6 @@ word-spacing: -4px;
   margin-bottom: 5px;
 }
 
-
-
 /* Why Different Section */
 .feature-card {
   background: transparent;
@@ -430,7 +444,6 @@ word-spacing: -4px;
   transition: box-shadow 0.3s, transform 0.3s;
   height: auto;
 }
-
 
 .feature-icon {
   width: 80px;
@@ -476,10 +489,10 @@ word-spacing: -4px;
 }
 .contact-section {
   position: relative;
-  margin-top: -28.5px;
+  margin-top: -29px;
   width: 100%;
   height: 599px;
-  background-image: url('../images/Shape\ 64.png');
+  background-image: url("../images/Shape\ 64.png");
   background-position: center -200px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -491,15 +504,15 @@ word-spacing: -4px;
 
 .contact-form {
   position: absolute;
-  margin-top: 4px;
-  top: 70%;
+  margin-top: 1.5px;
+  top: 70.5%;
   right: 178px;
   transform: translateY(-50%);
   background: white;
   padding: 50px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-  width:391px;
-  height: 448px;
+  width: 390.5px;
+  height: 450px;
 }
 
 .contact-form h3 {
@@ -512,13 +525,13 @@ word-spacing: -4px;
   color: #2c3e50;
   word-spacing: -3.5px;
 }
-.nav-right .nav-item:last-child {
-  margin-left: 39px !important;
+.navbar-nav .contact {
+  margin-left: -50px !important;
 }
-.form-group-custom {
-  margin-bottom: 4px;
-  padding-left: 15px;
 
+.form-group-custom {
+  margin-bottom: 7px;
+  padding-left: 11px;
 }
 .send-us-message {
   margin-top: -20px;
@@ -527,21 +540,21 @@ word-spacing: -4px;
   background: #d9534f;
   color: white;
   border: none;
-  padding: 19px 40px;
+  padding: 19px 39px;
   border-radius: 25px;
   font-weight: 600;
   width: 50%;
-  margin: 40px auto 0;
+  margin: 45px auto 0;
   display: block;
   transition: background 0.3s;
 }
-
 
 /* Footer */
 footer {
   background: #1a1a1a;
   color: #fff;
-  padding: 45px 5px 40px;
+  padding: 47px 5px 40px;
+  margin-top: -1px;
 }
 
 footer h5 {
@@ -550,6 +563,7 @@ footer h5 {
   font-family: sans-serif;
   color: white;
   margin-bottom: 4px;
+  margin-left: -2px;
 }
 
 footer a {
@@ -562,7 +576,6 @@ footer a {
   transition: color 0.3s;
 }
 
-
 footer p {
   color: #bbb;
   font-size: 14px;
@@ -573,9 +586,10 @@ footer p {
   padding: 60px 0;
 }
 .custom-send-btn {
-  width: 100px;
+  width: 98px;
+  height: 40px;
   margin-left: -6px;
-  margin-top:87px;
+  margin-top: 83px;
 }
 /* Responsive */
 @media (max-width: 992px) {
@@ -633,19 +647,19 @@ footer p {
   z-index: 30;
 }
 .feature-div-1 img {
-  margin-top: -0.5px !important;
+  margin-top: -3.5px !important;
   margin-left: -14.8px !important;
 }
 .feature-div-2 img {
-  margin-top: -0.5px;
+  margin-top: -3.5px;
   margin-left: -3.5px !important;
 }
 .feature-div-3 img {
-  margin-top: -0.5px;
+  margin-top: -3.5px;
   margin-left: 6.5px !important;
 }
 .footer-shift-left-0 {
-  margin-left:-4px;
+  margin-left: -4px;
 }
 @media (max-width: 1200px) {
   .search-box-wrapper {
