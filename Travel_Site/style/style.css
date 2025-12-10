@@ -29,7 +29,10 @@ h5 {
   background: white !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: relative;
+  max-width: 1365px;
   z-index: 1000;
+  display: block;
+  margin: 0 auto;
 }
 
 .navbar-nav {
@@ -47,8 +50,9 @@ h5 {
 }
 
 .small-img {
-  height: 55.9px;
-  width: auto;
+  height: 49px;
+  margin-bottom: 5px;
+  width: 315px;
 }
 
 .hero-title {
@@ -85,18 +89,19 @@ h5 {
 
 .hero-section {
   position: relative;
-  height: 105vh;
+  max-height: 80.9vh;
+  max-width: 1365px;
   overflow: hidden;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-section img {
-  display: block;
-  width: 101%;
-  height: 100%;
+  width: 161.8vh;
+  max-height: 84.8vh;
   object-fit: cover;
-  object-position: 50% 41%;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 .search-box-wrapper {
@@ -191,7 +196,7 @@ h5 {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 5.5px;
   color: #2c3e50;
   letter-spacing: 1.2px;
 }
@@ -303,6 +308,7 @@ h5 {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .navbar-nav li {
@@ -449,6 +455,7 @@ h5 {
   align-self: flex-start;
   margin-left: -5.8px;
   margin-bottom: 5px;
+  background-color: #f31131;
 }
 .btn-book-1 {
   margin-left: -1.5px !important;
@@ -513,7 +520,7 @@ h5 {
 
 .contact-section {
   position: relative;
-  margin-top: -28px;
+  margin-top: -29px;
   width: 100%;
   height: 599px;
   background-image: url("../images/Shape\ 64.png");
@@ -530,7 +537,7 @@ h5 {
   position: absolute;
   margin-top: 2px;
   top: 70.5%;
-  right: 177.1px;
+  right: 352px;
   transform: translateY(-50%);
   background: white;
   padding: 50px;
@@ -539,7 +546,7 @@ h5 {
   height: 450px;
 }
 .questions {
-  margin-left: 65px;
+  margin-left: 45px;
 }
 .contact-form h3 {
   margin-top: -15px;
@@ -581,8 +588,11 @@ h5 {
 footer {
   background: #1a1a1a;
   color: #fff;
-  padding: 48px 5px 40px;
+  padding: 46px 5px 40px;
   margin-top: -1px;
+  max-width: 1365px;
+  display: block;
+  margin: 0 auto;
 }
 
 footer h5 {
@@ -595,7 +605,7 @@ footer h5 {
 }
 
 footer a {
-  color: #bbb;
+  color: white;
   text-decoration: none;
   display: block;
   margin-bottom: 2.9px;
@@ -605,14 +615,17 @@ footer a {
 }
 
 footer p {
-  color: #bbb;
   font-size: 14px;
   margin-bottom: 4.5px;
+  color: white;
 }
 
 .bg-content {
-  background-color: #f8f9fa;
+  background-color: #ecf0f1;
   padding: 59px 0;
+  max-width: 1365px;
+  display: block;
+  margin: 0 auto;
 }
 
 .custom-send-btn {
@@ -914,7 +927,7 @@ footer p {
 
   .location-thali-img,
   .location-card img {
-    width: 100% !important;
+    width: 100%;
     height: 250px;
     left: 0;
     margin-left: 0;
@@ -1021,16 +1034,29 @@ footer p {
 
   .btn-book {
     margin-top: 4vh;
+    background-color: #f31131;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-section {
-    height: 70vh;
+  * {
+    box-sizing: border-box;
   }
+
+  .location-thali-img,
+  .location-thali {
+    width: 50px;
+    height: 80px;
+  }
+
+  .hero-section {
+    height: 20vh;
+  }
+
   .contact {
     padding-left: 5vh;
   }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -1052,6 +1078,10 @@ footer p {
   .vacation-2,
   .vacation-3 {
     margin-left: 0 !important;
+  }
+
+  .vacation-1 {
+    padding-right: 0 !important;
   }
 
   .location-card {
@@ -1092,5 +1122,16 @@ footer p {
     margin-right: 0 !important;
     padding-right: 0 !important;
     word-spacing: normal;
+  }
+
+  .btn-book-1 {
+    padding-top: 10px !important;
+  }
+  .amenities-list {
+    padding-bottom: 10px !important;
+  }
+  .hero-section {
+    max-height: 200px !important;
+    height: 100%;
   }
 }
