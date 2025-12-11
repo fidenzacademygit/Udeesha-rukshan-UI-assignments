@@ -7,8 +7,8 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  margin-left: 65px !important;
-  margin-right: 65px !important;
+  margin-left: 282px !important;
+  margin-right: 282px !important;
 }
 
 header {
@@ -24,7 +24,6 @@ header {
   background-color: transparent;
 }
 
-
 .logo {
   color: white;
   font-size: 24px;
@@ -39,13 +38,13 @@ nav a {
 
 .hero {
   position: relative;
-  height: 88vh;
+  height: 70.4vh;
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;     
-  justify-content: center;      
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -63,12 +62,13 @@ nav a {
 .hero-content {
   z-index: 10;
   color: white;
+  margin-top: -10vh;
 }
-.hero-content h2{
-    margin-top: 27%;
+.hero-content h2 {
+  margin-top: 27%;
 }
-.hero-content p{
-    margin-top: 5%;
+.hero-content p {
+  margin-top: 5%;
 }
 
 .hero h1 {
@@ -100,7 +100,7 @@ nav a {
 }
 
 section {
-  padding:5.5%;
+  padding: 5.5%;
   text-align: center;
 }
 
@@ -113,6 +113,7 @@ h2 {
 .section-subtitle {
   color: #888;
   margin-bottom: 50px;
+  font-size: 16px;
 }
 
 .services-grid {
@@ -144,7 +145,9 @@ h2 {
   font-size: 14px;
   line-height: 1.6;
 }
-
+.works {
+  margin-top: 12px;
+}
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -160,6 +163,7 @@ h2 {
 
 .clients {
   background: #f8f8f8;
+  margin-top: -8vh;
 }
 
 .client-text {
@@ -192,7 +196,8 @@ h2 {
   background-size: cover;
   background-position: center;
   color: white;
-  height: 105.2vh;
+  margin-top: 7.5vh;
+  height: 84.5vh;
 }
 
 .team h2,
@@ -206,6 +211,7 @@ h2 {
   gap: 30px;
   max-width: 1175px;
   margin: 0 auto;
+  margin-top: 95px;
 }
 
 .team-member {
@@ -216,7 +222,7 @@ h2 {
 
 .team-member img {
   width: 100%;
-  height: 250px;
+  height: 270px;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -244,10 +250,13 @@ h2 {
   border-radius: 50%;
   display: inline-block;
 }
-
+.meet-btn {
+  margin-top: 9.2vh;
+}
 .logos {
   background: #f8f8f8;
-  padding: 60px 50px;
+  padding: 40px;
+  height: 14vh;
 }
 
 .logos-grid {
@@ -257,7 +266,7 @@ h2 {
   gap: 60px;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-right: 4px;
 }
 
 .logos-grid img {
@@ -265,7 +274,9 @@ h2 {
   filter: grayscale(100%);
   opacity: 0.6;
 }
-
+.price {
+  margin-top: 17px;
+}
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -293,6 +304,8 @@ h2 {
 .price-period {
   color: #888;
   margin-bottom: 30px;
+  font-size: 16px;
+  margin-top: 1.5vh;
 }
 
 .pricing-features {
@@ -319,11 +332,11 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   padding: 0;
+  margin-top: 9.3vh;
 }
 
 .map {
   background: #eee;
-  min-height: 500px;
 }
 
 .contact-form {
@@ -377,8 +390,8 @@ footer {
   height: 120px !important;
 }
 .nav-header {
- padding: 0 30px;
-  gap: 10px; 
+  padding: 0 30px;
+  gap: 10px;
 }
 header.nav-header {
   position: fixed;
@@ -404,11 +417,11 @@ header.nav-header {
 
 .hero-buttons {
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
+  flex-direction: column;
+  align-items: center;
   gap: 145px;
   margin-top: 2rem;
-  z-index: 10;      
+  z-index: 10;
 }
 
 .bottom-btn {
@@ -423,8 +436,8 @@ header.nav-header {
   color: #333;
   cursor: pointer;
 }
-.top-btn{
-    width:14vh;
+.top-btn {
+  width: 14vh;
 }
 @media (max-width: 768px) {
   .contact-section {
@@ -437,7 +450,7 @@ header.nav-header {
   header.nav-header {
     padding: 0 20px;
   }
-  
+
   .hero-buttons {
     margin-top: 1.5rem;
   }
