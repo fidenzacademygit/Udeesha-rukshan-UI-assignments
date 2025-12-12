@@ -288,7 +288,9 @@ h2 {
 .logos {
   background: #f8f8f8;
   padding: 40px;
-  height: 100px;
+  padding-left: 48px;
+  padding-top: 40.8px;
+  height: 150px;
   width: 1600px;
   margin: 0 auto;
 }
@@ -313,6 +315,7 @@ h2 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px;
+  height: 890px;
 }
 .pricing-grid {
   display: grid;
@@ -342,9 +345,6 @@ h2 {
 .pricing-features {
   list-style: none;
   margin-bottom: 30px;
-}
-.price-h2 {
-  margin-top: 50px;
 }
 .section-subtitle-price {
   font-size: 15px;
@@ -395,32 +395,71 @@ h2 {
   margin-left: 12px;
 }
 .p-p-1 {
-  margin-top: -20px;
+  margin-top: -13px;
 }
 .p-p-2 {
-  margin-top: -20px;
+  margin-top: -13px;
 }
 .p-p-3 {
-  margin-top: -20px;
+  margin-top: -13px;
 }
-.p-f-1{
-margin-top: 90px;
+.p-f-1 {
+  margin-top: 95px;
 }
-.p-f-2{
-margin-top: 75px;
+.p-f-2 {
+  margin-top: 75px;
 }
-.p-f-3{
-margin-top: 55px;
+.p-f-3 {
+  margin-top: 58px;
 }
-.s-btn-1{
-margin-top: 45px;
+.s-btn-1 {
+  font-size: 14px;
+  margin-top: 44px;
+  width: 125px;
+  height: 40px;
+  margin-left: -15px;
+  background-color: #475563;
+  color: white;
 }
-.s-btn-2{
-margin-top: -10px;
+.s-btn-2 {
+  width: 125px;
+  font-size: 14px;
+  height: 40px;
+  background-color: #475563;
+  color: white;
 }
-.s-btn-3{
-margin-top: -50px;
-margin-left: 20px;
+.s-btn-3 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  width: 125px;
+  height: 40px;
+  background-color: #475563;
+  color: white;
+}
+.name {
+  margin-top: 95px;
+  margin-left: 135px;
+}
+.email {
+  margin-top:10px;
+  margin-left: 135px;
+}
+.subject {
+  margin-top: -15px;
+  margin-left: 135px;
+}
+.message{
+  margin-left: 135px;
+}
+.inpt-name{
+  margin-top: -90px;
+}
+.inpt-email{
+  margin-top: -90px;
+}
+.form-container{
+  margin-top: -30px;
 }
 .btn-dark {
   background: #333;
@@ -437,47 +476,43 @@ margin-left: 20px;
   padding: 0;
   width: 1600px;
   margin: 0 auto;
-  height: 700px;
+  height: 650px;
 }
 
 .map {
   background: #eee;
-  height: 61vh;
+  height: 650px;
 }
 
 .contact-form {
   background-image: url("../images/form_back.png");
   padding: 60px;
   color: white;
-  height: 61vh;
+  height: 649.5px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  margin-left: 13vh;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 45%;
+.form-group input {
+  width: 44%;
   padding: 12px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  margin-left: 23vh;
-  margin-top: -10vh;
+  margin-left: 29vh;
+}
+.form-group textarea {
+  width: 44%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  margin-left: 29vh;
+  margin-top: -2vh;
 }
 
 footer {
   background: #1a1a1a;
   color: white;
-  padding: 30px 50px;
+  padding: 50px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -495,6 +530,25 @@ footer {
   background: #333;
   border-radius: 50%;
   display: inline-block;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.stay-touch {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-logos img {
+  height: 35px;
+  margin-left: 10px;
+  filter: grayscale(100%);
+  opacity: 0.6;
 }
 
 .nav-header {
@@ -541,6 +595,13 @@ header.nav-header {
 }
 .top-btn {
   width: 14vh;
+}
+.logo-end{
+  margin-left: 165px;
+}
+.submit-btn{
+  margin-left:420px;
+  margin-top: 2px;
 }
 @media (max-width: 768px) {
   .contact-section {
