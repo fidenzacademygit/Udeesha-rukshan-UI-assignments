@@ -17,6 +17,25 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+let lastScroll = 0;
+const header = document.querySelector('.nav-header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+
+    header.style.top = '-100px';
+  } else {
+
+    header.style.top = '0';
+  }
+
+  lastScroll = currentScroll;
+});
+</script>
+
   </head>
   <body>
     <header class="nav-header">
@@ -144,7 +163,7 @@
       <div class="team-grid">
         <div class="team-member">
           <img src="images/salazar.png" alt="Team Member 1" />
-          <p class="text-dark">KRISTIN HUNTER</p>
+          <p class="text-dark">Salazan Slytherin</p>
           <div class="role">CEO</div>
           <div class="social-icons">
             <a href="#"><img src="images/social71.png" /></a>
@@ -156,7 +175,7 @@
         </div>
         <div class="team-member">
           <img src="images/gryffindor.png" alt="Team Member 2" />
-          <p class="text-dark">DAVID PALMER</p>
+          <p class="text-dark">Godric Gryffindor</p>
           <div class="role">Lead Developer</div>
           <div class="social-icons">
             <a href="#"><img src="images/social71.png" /></a>
@@ -168,7 +187,7 @@
         </div>
         <div class="team-member">
           <img src="images/ravenclaw.png" alt="Team Member 3" />
-          <p class="text-dark">SARAH JOHNSON</p>
+          <p class="text-dark">Rowena Ravenclaw</p>
           <div class="role">Lead Designer</div>
           <div class="social-icons">
             <a href="#"><img src="images/social71.png" /></a>
@@ -180,7 +199,7 @@
         </div>
         <div class="team-member">
           <img src="images/hufflepuff.png" alt="Team Member 4" />
-          <p class="text-dark">CLAIRE HUGHES</p>
+          <p class="text-dark">Helga hufflepuff</p>
           <div class="role">Marketing</div>
           <div class="social-icons">
             <a href="#"><img src="images/social71.png" /></a>
@@ -277,8 +296,8 @@
     </div>
 
     <footer>
-      <div>
-        <span class="logo-end"><img src="images/logo.png" alt="ZET" /></span>
+      <div class="footer-left">
+        <span class="logo-end"><img src="images/dark_ZET.png" alt="ZET" /></span>
         <span style="margin-left: 20px"
           >© Copyright 2015. All Rights Reserved</span
         >
@@ -286,9 +305,10 @@
       <div class="footer-content">
     <span class="stay-touch">Stay in Touch</span>
     <div class="footer-logos">
-      <img src="images/logo1.png" alt="Logo 1" />
-      <img src="images/logo2.png" alt="Logo 2" />
-      <img src="images/logo3.png" alt="Logo 3" />
+      <img src="images/facebook.png" alt="Logo 1" />
+      <img src="images/social71.png" alt="Logo 2" />
+      <img src="images/social92.png" alt="Logo 3" />
+      <img src="images/dribble.png" alt="Logo 3" />
     </div>
   </div>
     </footer>

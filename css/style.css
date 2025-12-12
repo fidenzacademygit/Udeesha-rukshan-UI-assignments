@@ -9,19 +9,6 @@ body {
   color: #333;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  background-color: transparent;
-}
-
 .logo {
   color: white;
   font-size: 24px;
@@ -321,7 +308,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -329,6 +316,10 @@ h2 {
 .pricing-card {
   border: 1px solid #ddd;
   padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .pricing-card h4 {
@@ -414,51 +405,51 @@ h2 {
 }
 .s-btn-1 {
   font-size: 14px;
-  margin-top: 44px;
-  width: 125px;
-  height: 40px;
+  margin-top: 20px;
+  padding: 8px 35px;
   margin-left: -15px;
+  margin-top: 13px;
   background-color: #475563;
   color: white;
 }
 .s-btn-2 {
-  width: 125px;
   font-size: 14px;
-  height: 40px;
   background-color: #475563;
   color: white;
+  padding: 8px 35px;
+  margin-top: -9px;
 }
 .s-btn-3 {
   font-size: 14px;
   margin-bottom: 50px;
-  margin-left: 20px;
-  width: 125px;
-  height: 40px;
+  margin-left: 15px;
+  padding: 8px 35px;
   background-color: #475563;
   color: white;
+  margin-top: -34px;
 }
 .name {
   margin-top: 95px;
   margin-left: 135px;
 }
 .email {
-  margin-top:10px;
+  margin-top: 10px;
   margin-left: 135px;
 }
 .subject {
   margin-top: -15px;
   margin-left: 135px;
 }
-.message{
+.message {
   margin-left: 135px;
 }
-.inpt-name{
+.inpt-name {
   margin-top: -90px;
 }
-.inpt-email{
+.inpt-email {
   margin-top: -90px;
 }
-.form-container{
+.form-container {
   margin-top: -30px;
 }
 .btn-dark {
@@ -510,11 +501,11 @@ h2 {
 }
 
 footer {
-  background: #1a1a1a;
+  background-color: white;
   color: white;
   padding: 50px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 1600px;
   margin: 0 auto;
@@ -536,12 +527,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 30px;
+  margin-left: 250px;
 }
 
 .stay-touch {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
+  color: #333;
+  margin-top: -10px;
+  margin-left: -55px;
 }
 
 .footer-logos img {
@@ -550,22 +544,30 @@ footer {
   filter: grayscale(100%);
   opacity: 0.6;
 }
-
+.footer-left {
+  margin-left: -160px;
+}
+.footer-logos {
+  margin-top: -10px;
+  padding-left: -10px;
+}
 .nav-header {
   padding: 0 30px;
   gap: 10px;
 }
 header.nav-header {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 16.2%;
   height: 90px;
-
   z-index: 1000;
   background-color: transparent;
+  transition: top 0.3s;
 }
 
 .nav-header > * {
@@ -596,26 +598,467 @@ header.nav-header {
 .top-btn {
   width: 14vh;
 }
-.logo-end{
+.logo-end {
   margin-left: 165px;
 }
-.submit-btn{
-  margin-left:420px;
+.submit-btn {
+  margin-left: 420px;
   margin-top: 2px;
 }
-@media (max-width: 768px) {
-  .contact-section {
-    grid-template-columns: 1fr;
+
+@media (max-width: 1599px) {
+  .hero,
+  .works,
+  .clients,
+  .team,
+  .logos,
+  .contact-section,
+  footer {
+    max-width: 100%;
+    width: 100%;
   }
 
   .works-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  header.nav-header {
+    width: 100%;
+    margin-left: 0;
     padding: 0 20px;
   }
 
+  header.nav-header {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  header.nav-header {
+    padding: 0 40px;
+  }
+
+  .services-grid,
+  .team-grid,
+  .pricing-grid {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid .pricing-card:nth-child(1),
+  .pricing-grid .pricing-card:nth-child(2),
+  .pricing-grid .pricing-card:nth-child(3) {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 60%;
+    margin-left: 10vh;
+  }
+
+  .name,
+  .email,
+  .subject,
+  .message {
+    margin-left: 50px;
+  }
+
+  .submit-btn {
+    margin-left: 50px;
+  }
+
+  .logo-end {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  header.nav-header {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+    margin-top: 20%;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  .works {
+    height: auto;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .clients {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .team {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .team-grid {
+    margin-top: 50px;
+  }
+
+  .meet-btn {
+    margin-top: 50px;
+  }
+
+  .price {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+  .p-f-1,
+  .p-f-2,
+  .p-f-3 {
+    margin-top: 30px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .map {
+    height: 400px;
+  }
+
+  .contact-form {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .name,
+  .email,
+  .subject,
+  .message {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .submit-btn {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .logo-end {
+    margin-left: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  header.nav-header {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  .logo img {
+    max-width: 80px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
   .hero-buttons {
-    margin-top: 1.5rem;
+    gap: 100px;
+  }
+
+  .top-btn {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .bottom-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .client-text {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .meet-btn {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .logos {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .pricing-grid {
+    gap: 20px;
+  }
+
+  .pricing-card {
+    padding: 30px 20px;
+  }
+
+  .s-btn-1,
+  .s-btn-2,
+  .s-btn-3 {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  header.nav-header {
+    padding: 0 15px;
+  }
+
+  .hero {
+    height: 450px;
+    background-position: center;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+    margin-top: 25%;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .hero-buttons {
+    gap: 80px;
+    margin-top: 1rem;
+  }
+
+  .top-btn {
+    width: 110px;
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+
+  .bottom-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .section-subtitle-services,
+  .section-subtitle-works,
+  .section-subtitle-client,
+  .section-subtitle-team,
+  .section-subtitle-price {
+    font-size: 13px;
+  }
+
+  .service-item {
+    padding: 20px 10px;
+  }
+
+  .service-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-item h5 {
+    font-size: 14px;
+  }
+
+  .service-item p {
+    font-size: 13px;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-avatar {
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+  }
+
+  .team-member img {
+    height: 250px;
+  }
+
+  .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pricing-card {
+    padding: 25px 15px;
+  }
+
+  .pricing-features li {
+    font-size: 13px;
+  }
+
+  .map {
+    height: 300px;
+  }
+
+  .contact-form {
+    padding: 30px 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  footer {
+    padding: 30px 15px;
+    background-color: white;
+  }
+
+  footer > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer > div:first-child span {
+    margin-left: 0 !important;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .service-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-member img {
+    height: 200px;
+  }
+  .logos {
+    display: none;
   }
 }
