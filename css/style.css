@@ -96,6 +96,9 @@ h2 {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+.nav-bar-menu{
+
+}
 .services-h2 {
   margin-top: -4px;
 }
@@ -252,14 +255,17 @@ h2 {
 .team-member .role {
   color: #888;
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+.role{
+  margin-top: -15px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 5px;
-  margin-top: -7px;
+  margin-top: -10px;
 }
 
 .social-icons a img {
@@ -269,7 +275,7 @@ h2 {
   display: inline-block;
 }
 .meet-btn {
-  margin-top: 11vh;
+  margin-top: 94px;
   width: 199px;
 }
 .logos {
@@ -343,8 +349,11 @@ h2 {
 }
 .pricing-features li {
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
   font-size: 14px;
+}
+.middle-p-card{
+  border-top: 7px solid #475563;
+  margin-top: -9px;
 }
 
 .pricing-grid .pricing-card:nth-child(1) {
@@ -368,7 +377,7 @@ h2 {
   margin-top: -15px;
 }
 .p-t-2 {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .p-t-3 {
   margin-top: -15px;
@@ -406,7 +415,7 @@ h2 {
 .s-btn-1 {
   font-size: 14px;
   margin-top: 20px;
-  padding: 8px 35px;
+  padding: 9px 35px;
   margin-left: -15px;
   margin-top: 44px;
   background-color: #475563;
@@ -417,7 +426,7 @@ h2 {
   background-color: #475563;
   color: white;
   padding: 8px 35px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 .s-btn-3 {
   font-size: 14px;
@@ -426,10 +435,10 @@ h2 {
   padding: 8px 35px;
   background-color: #475563;
   color: white;
-  margin-top: -5px;
+  margin-top: px;
 }
 .name {
-  margin-top: 95px;
+  margin-top: 115px;
   margin-left: 135px;
 }
 .email {
@@ -437,20 +446,20 @@ h2 {
   margin-left: 135px;
 }
 .subject {
-  margin-top: -15px;
+  margin-top: -25px;
   margin-left: 135px;
 }
 .message {
   margin-left: 135px;
 }
 .inpt-name {
-  margin-top: -90px;
+  margin-top: -130px;
 }
 .inpt-email {
-  margin-top: -90px;
+  margin-top: -150px;
 }
 .form-container {
-  margin-top: -30px;
+  margin-top: -53px;
 }
 .btn-dark {
   background: #333;
@@ -497,7 +506,7 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   margin-left: 29vh;
-  margin-top: -2vh;
+  margin-top: -3vh;
 }
 
 footer {
@@ -605,7 +614,24 @@ header.nav-header {
   margin-left: 420px;
   margin-top: 2px;
 }
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: transparent;
+  margin-top: 15px;
+}
 
+.indicator.active {
+  background-color: #000;
+}
+.fb-footer{
+  margin-left: -30px;
+}
+.copyright{
+  color: black;
+}
 @media (max-width: 1599px) {
   .hero,
   .works,
