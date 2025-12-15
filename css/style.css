@@ -152,7 +152,6 @@ h2 {
 }
 
 .works-grid img {
-  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -688,7 +687,7 @@ header.nav-header {
 }
 .copyright {
   color: black;
-  margin-left: 20px
+  margin-left: 20px;
 }
 @media (max-width: 1599px) {
   .hero,
